@@ -21,7 +21,7 @@ const code = `#include <iostream>
 // const proxyurl = "https://cors-anywhere.herokuapp.com/";
 const url = "https://api.jdoodle.com/v1/execute";
 
-app.post("/", (req, res) => {
+app.post("/compile", (req, res) => {
     console.log(req.body.lang);
     const program = {
         script: req.body.code,

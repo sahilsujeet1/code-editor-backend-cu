@@ -6,7 +6,9 @@ var cors = require('cors');
 
 const axios = require("axios");
 const app = express();
-app.use(cors())
+app.use(cors({
+    origin: "*"
+}))
 app.use(bodyParser.json());
 
 const code = `#include <iostream>
